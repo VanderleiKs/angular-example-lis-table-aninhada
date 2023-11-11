@@ -1,0 +1,17 @@
+<!-- <ul>
+    <li *ngFor="let item of listItem">
+        <input type="checkbox" name="comprou" id="{{item.id}}">
+        {{item.name}} - {{item.quantity}}
+    </li>
+</ul> -->
+
+<table class="table">
+    <thead>
+        <th></th>
+        <th>Name</th>
+        <th>Quantity</th>
+    </thead>
+    <tbody>
+        <app-linha-list *ngFor="let item of listItem" [item]="item"></app-linha-list>
+    </tbody>
+</table>
